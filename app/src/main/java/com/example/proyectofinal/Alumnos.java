@@ -126,4 +126,75 @@ public class Alumnos extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void ModificarAlumnos(View v){
+
+        AdminSQLiteOpenHelper admin= new AdminSQLiteOpenHelper
+                (this,"administracion",null,1);
+        SQLiteDatabase db= admin.getWritableDatabase();
+        String codigo= ed0.getText().toString();
+        String nombre= ed1.getText().toString();
+        String apellido= ed2.getText().toString();
+        String cedula= ed3.getText().toString();
+        String correo=ed4.getText().toString();
+        String telefono=ed5.getText().toString();
+        String nombrer=ed6.getText().toString();
+        String direccion=ed7.getText().toString();
+        if(!nombre.isEmpty() && !apellido.isEmpty() && !cedula.isEmpty() && !correo.isEmpty() && !telefono.isEmpty() && !nombrer.isEmpty() && !direccion.isEmpty())
+        {
+            ContentValues registro = new ContentValues();
+            registro.put("codigo",codigo);
+            registro.put("nombre",nombre);
+            registro.put("apellido",apellido);
+            registro.put("cedula",cedula);
+            registro.put("correo",correo);
+            registro.put("telefono",telefono);
+            registro.put("nombrer",nombrer);
+            registro.put("direccion",direccion);
+
+            int cantidad = db.update("alumnos",registro,"codigo="+codigo,null);
+            db.close();
+
+            if(cantidad==1)
+            {
+                Toast.makeText(this,"Articulo Modificado Exitosamente", Toast.LENGTH_SHORT).show();
+
+            }else{
+                Toast.makeText(this,"Articulo no existe", Toast.LENGTH_SHORT).show();
+            }
+
+        }else{
+            Toast.makeText(this,"Debes llenar todos los campos", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+    public void EliminarAlumnos(View v){
+        AdminSQLiteOpenHelper admin= new AdminSQLiteOpenHelper
+                (this,"administracion",null,1);
+        SQLiteDatabase db= admin.getWritableDatabase();
+        String codigo=ed0.getText().toString();
+        if(!codigo.isEmpty())
+        {
+            int cantidad = db.delete("alumnos", "codigo="+codigo,null);
+            db.close();
+
+            ed0.setText("");
+            ed1.setText("");
+            ed2.setText("");
+            ed3.setText("");
+            ed4.setText("");
+            ed5.setText("");
+            ed6.setText("");
+            ed7.setText("");
+
+            if(cantidad==1)
+            {
+                Toast.makeText(this,"Alumno eliminado exitosamente", Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this,"El Alumno no existe", Toast.LENGTH_SHORT).show();
+            }
+        }else
+        {
+            Toast.makeText(this,"Debe introducir el codigo del alumno", Toast.LENGTH_SHORT).show();
+        }
+    }
 }

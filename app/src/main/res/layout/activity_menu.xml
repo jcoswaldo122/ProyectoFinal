@@ -7,33 +7,85 @@
     tools:context=".Menu">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="418dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="277dp"
-        android:layout_marginBottom="278dp"
-        android:onClick="Ingresar1"
-        android:text="Registro de Estudiantes"
-        android:textDirection="anyRtl"
-        android:textIsSelectable="true"
-        android:textSize="12sp"
+        android:id="@+id/button7"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginBottom="326dp"
+        android:onClick="Alumnos"
+        android:text="Crear Alumno"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="362dp"
+        android:id="@+id/imageView3"
+        android:layout_width="205dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="409dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/francisb" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="289dp"
+        android:layout_marginBottom="266dp"
+        android:onClick="Notas"
+        android:text="GUARDAR NOTAS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginBottom="207dp"
+        android:onClick="ListadoAprobados"
+        android:text="LISTADO DE ALUMNOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="409dp"
+        android:layout_marginBottom="146dp"
+        android:onClick="ListadoReprobados"
+        android:text="LISTADO DE REPROBADOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="471dp"
+        android:layout_marginBottom="84dp"
+        android:onClick="Usuario"
+        android:text="CANCELAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
