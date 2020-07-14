@@ -26,9 +26,9 @@ public class Alumnos extends AppCompatActivity {
         setContentView(R.layout.activity_alumnos);
         img = findViewById(R.id.imageView);
         ed0= findViewById(R.id.txtCodigo);
-        ed1= findViewById(R.id.txtNombre);
-        ed2= findViewById(R.id.txtApellido);
-        ed3= findViewById(R.id.txtCedula);
+        ed1= findViewById(R.id.tvCedula);
+        ed2= findViewById(R.id.tvNombre);
+        ed3= findViewById(R.id.tvCedula);
         ed4= findViewById(R.id.txtCorreo);
         ed5= findViewById(R.id.txtTelefono);
         ed6= findViewById(R.id.txtNombrer);

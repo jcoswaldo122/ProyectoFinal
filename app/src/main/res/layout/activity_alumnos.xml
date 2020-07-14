@@ -38,7 +38,7 @@
             android:textSize="12sp" />
 
         <EditText
-            android:id="@+id/txtNombre"
+            android:id="@+id/tvCedula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -47,7 +47,7 @@
             android:textSize="12sp" />
 
         <EditText
-            android:id="@+id/txtApellido"
+            android:id="@+id/tvNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -56,7 +56,7 @@
             android:textSize="12sp" />
 
         <EditText
-            android:id="@+id/txtCedula"
+            android:id="@+id/tvCedula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
