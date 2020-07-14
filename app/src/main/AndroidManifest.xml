@@ -21,24 +21,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu">
-
-
-        </activity>
+        <activity android:name=".Prueba"></activity>
+        <activity android:name=".Menu"></activity>
         <activity android:name=".ListadoDeReprobados" />
         <activity android:name=".ListadoDeAprobados" />
         <activity android:name=".Notas" />
         <activity android:name=".Alumnos" />
-        <activity android:name=".Estudiantes">
-
-        </activity>
+        <activity android:name=".Estudiantes"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
